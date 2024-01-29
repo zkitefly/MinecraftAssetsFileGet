@@ -114,7 +114,7 @@ def downloadFile(z):
                 ErrorStop()
         
         if Sha1(downloadPath) == sha1:
-            print("√校验通过，下载完成" + downloadPath)
+            # print("√校验通过，下载完成" + downloadPath) # 不行，这个打印的太多会卡
             break
         else:
             print("X检验失败, 重新下载"+str([sha1,downloadPath,fileUrl]))
