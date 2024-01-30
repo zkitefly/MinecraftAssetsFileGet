@@ -62,7 +62,7 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.BOTTOKEN }}
+        token: ${{ github.token }}
 
     - name: Upload artifact to release
       uses: ncipollo/release-action@v1.12.0
