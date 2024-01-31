@@ -59,10 +59,10 @@ jobs:
         branch: ${{ github.head_ref }}
       continue-on-error: true
       
-    - name: Checkout the repository
-      uses: actions/checkout@v3
-      with:
-        token: ${{ github.token }}
+    # - name: Checkout the repository
+    #   uses: actions/checkout@v3
+    #   with:
+    #     token: ${{ github.token }}
 
     - name: Upload artifact to release
       uses: ncipollo/release-action@v1.12.0
